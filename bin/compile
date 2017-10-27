@@ -5,7 +5,6 @@ ENV_DIR="$3"
 
 # load required environment variables
 GIT_REPO_URL=$(<"$ENV_DIR/GIT_REPO_URL")
-GIT_SSH_KEY=$(<"$ENV_DIR/GIT_SSH_KEY")
 
 if [[ -z $GIT_REPO_URL ]]; then
     echo "Did you forget to set GIT_REPO_URL?"
